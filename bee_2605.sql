@@ -57,6 +57,9 @@ VALUES
   (5,	'Chair',	3000,	210.64,	3,	6),
   (6,	'Single bed',	750,	460,	1,	2);
   
+SELECT pro.name, prov.name FROM products pro INNER JOIN providers prov ON pro.id_providers = prov.id WHERE pro.id_categories = 6;
+
+
   /*  Execute this query to drop the tables */
   -- 
   
