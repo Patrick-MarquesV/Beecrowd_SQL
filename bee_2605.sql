@@ -63,4 +63,4 @@ SELECT pro.name, prov.name FROM products pro INNER JOIN providers prov ON pro.id
   /*  Execute this query to drop the tables */
   -- 
   
-  -- DROP TABLE products, providers, categories; --
+  DROP TABLE products, providers, categories; --
