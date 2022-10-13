@@ -35,6 +35,6 @@ VALUES
   (6,	'04/04/2016',	4);
   
   /*  Execute this query to drop the tables */
---   DROP TABLE rentals, customers; --
+  -- DROP TABLE rentals, customers; --
 
-SELECT c.name, r.rentals_date FROM rentals r INNER JOIN customers c ON r.id_customers = c.id WHERE R.RENTALS_DATE >= '2016-09-01' AND R.RENTALS_DATE <= '2016-09-30' GROUP BY c.name, r.rentals_date;
+SELECT c.name, r.rentals_date FROM rentals r JOIN customers c ON r.id_customers = c.id WHERE EXTRACT(MONTH FROM R.RENTALS_DATE)=9;
